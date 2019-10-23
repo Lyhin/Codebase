@@ -40,7 +40,5 @@ public class Test {
         UserManager manager=new UserManager();
         manager.usernameExist(username);
 
-
-
     }
 }
