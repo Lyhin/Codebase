@@ -1,4 +1,4 @@
-package HomeWork01.P1;
+
 
 import javax.print.MultiDocPrintService;
 import java.util.Arrays;
