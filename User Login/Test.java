@@ -4,7 +4,10 @@ import java.util.Scanner;
 
 public class Test {
 
-       static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
+    static UserManager manager=new UserManager();
+
+
     public static void main(String[] args) {
 
         while(true){
@@ -31,14 +34,41 @@ public class Test {
     }
 
     private static void login() {
+        System.out.println("请输入用户名");
+        String username = sc.next();
+        System.out.println("请输入密码:");
+        String password=sc.next();
+
+        User user = new User();
+        user.setUsername(username);
+        user.setPassword(password);
+        if (manager.userExist(user)) {
+            System.out.println("登入成功");
+        } else {
+            System.out.println("用户名或密码不正确");
+        }
+
+
     }
 
     private static void register() {
         System.out.println("请输入用户名");
         String username = sc.next();
 
-        UserManager manager=new UserManager();
-        manager.usernameExist(username);
+        while(manager.usernameExist(username)){
+            System.out.println("用户名已存在，需要重新输入");
+            username=sc.next();
+
+        }
+        System.out.println("请输入密码:");
+        String password=sc.next();
+
+        User user =new User();
+        user.setUsername(username);
+        user.setPassword(password);
+        manager.add(user);
+        System.out.println("注册成功");
+
 
     }
 }
