@@ -13,15 +13,18 @@ public class Test {
         while(true){
 
             System.out.println("请选择你的操作:");
+            System.out.println("\t1用户注册，2用户登入，3退出程序");
 
             int choice = sc.nextInt();
 
 
         switch (choice) {
             case 1:
+                //用户选择1，表示用户注册
                 register();
                 break;
             case 2:
+                //用户选择2，表示登入
                 login();
                 break;
             default:

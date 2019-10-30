@@ -2,7 +2,7 @@
 
 public class User {
     private String username;
-    private String passowrd;
+    private String password;
 
     public String getUsername() {
         return username;
@@ -12,12 +12,12 @@ public class User {
         this.username = username;
     }
 
-    public String getPassowrd() {
-        return passowrd;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPassowrd(String passowrd) {
-        this.passowrd = passowrd;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override
@@ -28,13 +28,13 @@ public class User {
         User user = (User) o;
 
         if (username != null ? !username.equals(user.username) : user.username != null) return false;
-        return passowrd != null ? passowrd.equals(user.passowrd) : user.passowrd == null;
+        return password != null ? password.equals(user.password) : user.password == null;
     }
 
     @Override
     public int hashCode() {
         int result = username != null ? username.hashCode() : 0;
-        result = 31 * result + (passowrd != null ? passowrd.hashCode() : 0);
+        result = 31 * result + (password != null ? password.hashCode() : 0);
         return result;
     }
 }

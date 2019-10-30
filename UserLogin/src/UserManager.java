@@ -8,12 +8,16 @@ public class UserManager {
     private User[] usersss;
     private int size;
 
-    public UserManager(User[] usersss) {
-        this.usersss = usersss;
+    public UserManager() {
+        usersss = new User[5];
+    }
+
+    public UserManager(int capacity) {
+        usersss = new User[capacity];
     }
 
     public void add(User u) {
-        if (size>=usersss.length) {
+        if (size >= usersss.length) {
             usersss = Arrays.copyOf(usersss, usersss.length * 2);
         }
 
