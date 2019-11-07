@@ -21,7 +21,7 @@ public class SelectionSort {
                 }
             }
             //把min元素交换到0位置
-            if (min != x) {
+            if (min != x) {                //最小元素已在最前端即min=x,可不必进行交换
                 int t = date[x];
                 date[x] = date[min];
                 date[min] = t;
