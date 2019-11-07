@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/Arrays/Arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/Codebase.iml" filepath="$PROJECT_DIR$/Codebase.iml" />
       <module fileurl="file://$PROJECT_DIR$/UserLogin/UserLogin.iml" filepath="$PROJECT_DIR$/UserLogin/UserLogin.iml" />
     </modules>
