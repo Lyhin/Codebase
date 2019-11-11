@@ -13,6 +13,7 @@ public class BubbleSort {
         System.out.println("------------------");
 
         for (int x = 0; x < data.length-1; x++) {
+           
 
             for (int i = 0; i < data.length - 1-x; i++) {
                 if (data[i] < data[i + 1]) {
